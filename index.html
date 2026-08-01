@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos básicos y Responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia InnovaTech - Desarrollo Web</title>
+
+    <!-- Enlace a hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- CABECERA Y NAVEGACIÓN                      -->
+    <!-- ========================================== -->
+    <header class="cabecera">
+        <div class="contenedor header-flex">
+            <!-- Logotipo -->
+            <div class="logo">
+                <h2>Innova<span>Tech</span></h2>
+            </div>
+
+            <!-- Menú principal -->
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galeria">Proyectos</a></li>
+                    <li><a href="#testimonios">Reseñas</a></li>
+                    <li><a href="#contacto" class="btn-contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. SECCIÓN HERO (Portada principal) -->
+        <section id="inicio" class="hero">
+            <div class="contenedor hero-contenido">
+                <h1>Transformamos tus ideas en <span>Realidad Digital</span></h1>
+                <p>Desarrollo de software y diseño web a medida para escalar tu negocio al siguiente nivel en el mercado
+                    global.</p>
+                <a href="#servicios" class="btn-primario">Descubrir más</a>
+            </div>
+        </section>
+
+        <!-- 2. SECCIÓN SERVICIOS (Grid de 3 columnas) -->
+        <section id="servicios" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Nuestros Servicios</h2>
+                <p class="subtitulo-seccion">Soluciones integrales para la era moderna.</p>
+
+                <div class="grid-servicios">
+                    <article class="tarjeta">
+                        <div class="icono">💻</div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Sitios corporativos rápidos y adaptables a cualquier dispositivo.</p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="icono">📱</div>
+                        <h3>Apps Móviles</h3>
+                        <p>Llevamos tu negocio al bolsillo de tus clientes con apps nativas.</p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="icono">🚀</div>
+                        <h3>Marketing Digital</h3>
+                        <p>Estrategias SEO para aumentar tu visibilidad en internet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN NOSOTROS (Flexbox 2 columnas) -->
+        <section id="nosotros" class="seccion-oscura">
+            <div class="contenedor dos-columnas">
+                <div class="texto-nosotros">
+                    <h2>¿Quiénes somos?</h2>
+                    <p>Somos un equipo de ingenieros y diseñadores apasionados por la tecnología, creando arquitecturas
+                        web de alto impacto.</p>
+                    <ul class="lista-check">
+                        <li>✔️ Código limpio y optimizado</li>
+                        <li>✔️ Soporte técnico 24/7</li>
+                        <li>✔️ Diseños centrados en el usuario (UX/UI)</li>
+                    </ul>
+                </div>
+                <div class="imagen-nosotros">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                        alt="Equipo trabajando">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN GALERÍA CON TEXTO (Tarjetas de Proyectos) -->
+        <section id="galeria" class="seccion-clara">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Casos de Éxito</h2>
+                <p class="subtitulo-seccion">Explora algunos de nuestros proyectos más recientes.</p>
+
+                <div class="grid-galeria">
+                    <!-- Proyecto 1 -->
+                    <figure class="tarjeta-proyecto">
+                        <a href="#modal-1" class="enlace-foto">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                alt="Dashboard Financiero" class="img-fluida">
+                        </a>
+                        <figcaption class="info-proyecto">
+                            <h3>Dashboard Financiero</h3>
+                            <p>Plataforma de análisis de datos en tiempo real para el sector bancario.</p>
+                        </figcaption>
+                    </figure>
+                    <div id="modal-1" class="modal-visor">
+                        <a href="#galeria" class="btn-cerrar">X</a>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                            alt="Dashboard Ampliado">
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <figure class="tarjeta-proyecto">
+                        <a href="#modal-2" class="enlace-foto">
+                            <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&q=80"
+                                alt="E-commerce Ropa" class="img-fluida">
+                        </a>
+                        <figcaption class="info-proyecto">
+                            <h3>E-commerce de Moda</h3>
+                            <p>Tienda virtual con pasarela de pagos integrada y gestión de inventario.</p>
+                        </figcaption>
+                    </figure>
+                    <div id="modal-2" class="modal-visor">
+                        <a href="#galeria" class="btn-cerrar">X</a>
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1200&q=80"
+                            alt="E-commerce Ampliado">
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <figure class="tarjeta-proyecto">
+                        <a href="#modal-3" class="enlace-foto">
+                            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=600&q=80"
+                                alt="App de Delivery" class="img-fluida">
+                        </a>
+                        <figcaption class="info-proyecto">
+                            <h3>App de Logística</h3>
+                            <p>Aplicación móvil con rastreo GPS y gestión de flotas automatizada.</p>
+                        </figcaption>
+                    </figure>
+                    <div id="modal-3" class="modal-visor">
+                        <a href="#galeria" class="btn-cerrar">X</a>
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=1200&q=80"
+                            alt="App Ampliada">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SECCIÓN TESTIMONIOS (Nueva Sección para impactar) -->
+        <section id="testimonios" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+                <p class="subtitulo-seccion" style="color: #cbd5e1;">La satisfacción de quienes confían en nuestro
+                    código.</p>
+
+                <div class="grid-testimonios">
+                    <!-- Testimonio 1 -->
+                    <article class="tarjeta-testimonio">
+                        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                        <p class="cita">"El equipo de InnovaTech transformó por completo nuestra plataforma. Las ventas
+                            aumentaron un 40% gracias a la nueva interfaz."</p>
+                        <div class="perfil-cliente">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&q=80" alt="CEO"
+                                class="avatar">
+                            <div>
+                                <h4>Carlos Mendoza</h4>
+                                <span>Director General, RetailCorp</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Testimonio 2 -->
+                    <article class="tarjeta-testimonio">
+                        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                        <p class="cita">"Entregaron el proyecto de la aplicación móvil antes de la fecha límite. Un
+                            código impecable y un diseño espectacular."</p>
+                        <div class="perfil-cliente">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80"
+                                alt="Gerente" class="avatar">
+                            <div>
+                                <h4>Laura Valdivia</h4>
+                                <span>Gerente de Operaciones, LogiFast</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SECCIÓN UBICACIÓN / GOOGLE MAPS (Nueva Sección) -->
+        <section id="ubicacion" class="seccion-clara">
+            <div class="contenedor dos-columnas">
+                <!-- Información de contacto directa -->
+                <div class="texto-nosotros">
+                    <h2 class="titulo-seccion" style="text-align: left;">Visítanos en nuestras oficinas</h2>
+                    <p>Estamos estratégicamente ubicados para atender a clientes de todo el país y el extranjero. Ven a
+                        tomar un café y hablemos de tu próximo gran proyecto tecnológico.</p>
+                    <br>
+                    <p>📍 <strong>Dirección:</strong> Centro Empresarial, Tacna, Perú.</p>
+                    <p>📞 <strong>Teléfono:</strong> +51 987 654 321</p>
+                    <p>✉️ <strong>Email:</strong> proyectos@innovatech.com</p>
+                </div>
+                <!-- El iFrame de Google Maps -->
+                <div class="mapa-contenedor">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121743.08447833054!2d-70.3392437532353!3d-18.01243166567299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf5d710bfb7b%3A0xe5a363d6f1406859!2sTacna%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe"
+                        width="100%" height="350"
+                        style="border:0; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. SECCIÓN CONTACTO (Formulario / Caja) -->
+        <section id="contacto" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Inicia tu Proyecto</h2>
+                <p class="subtitulo-seccion" style="color: #cbd5e1;">Déjanos tus datos y nos contactaremos hoy mismo.
+                </p>
+
+                <div class="caja-formulario">
+                    <form id="form-contacto">
+                        <div class="grupo-input">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="mensaje">Tu mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu visión..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                        <div id="mensaje-estado" class="mensaje-estado"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA                              -->
+    <!-- ========================================== -->
+    <footer class="pie-pagina">
+        <div class="contenedor footer-info">
+            <h3>Innova<span>Tech</span></h3>
+            <p>&copy; 2026 Arquitectura de Entornos Web - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // URL de la aplicación web desplegada en Google Apps Script
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxMELeX0r_bjE4KfteClUx5zgnzPtX2PLnTxgh9vRtqCK1IA_eZ5G0yf6n4lorM0UjF/exec";
+
+        document.getElementById('form-contacto').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const btnEnviar = this.querySelector('.btn-enviar');
+            const estadoDiv = document.getElementById('mensaje-estado');
+
+            const datos = {
+                nombre: document.getElementById('nombre').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                mensaje: document.getElementById('mensaje').value.trim()
+            };
+
+            // UI enviando
+            btnEnviar.disabled = true;
+            btnEnviar.textContent = 'Enviando...';
+            estadoDiv.className = 'mensaje-estado estado-info';
+            estadoDiv.textContent = '⏳ Enviando tu mensaje...';
+
+            try {
+                const formData = new FormData();
+                formData.append('nombre', datos.nombre);
+                formData.append('email', datos.email);
+                formData.append('mensaje', datos.mensaje);
+
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
+
+                // Notificación exitosa al cliente
+                estadoDiv.className = 'mensaje-estado estado-exito';
+                estadoDiv.textContent = '¡Gracias! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo muy pronto.';
+                this.reset();
+            } catch (error) {
+                console.error('Error al enviar:', error);
+                estadoDiv.className = 'mensaje-estado estado-error';
+                estadoDiv.textContent = '❌ Ocurrió un problema al enviar tu mensaje. Por favor, inténtalo nuevamente.';
+            } finally {
+                btnEnviar.disabled = false;
+                btnEnviar.textContent = 'Enviar Mensaje';
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+    
+</html>
